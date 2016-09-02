@@ -81,8 +81,10 @@ h1, h2, h3, h4, h5, h6 {
 // Custom Navigation Bar
 
 .navbar-custom {
-    background-color: @gray-darker;
-    border-color: transparent;
+    background-color: white;
+    //border-color: transparent;
+    border-bottom: 3px solid black;
+
     .navbar-brand {
         color: @theme-primary;
         .script-font;
@@ -113,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
                 .heading-font;
                 font-weight: 400;
                 letter-spacing: 1px;
-                color: white;
+                color: black;
                 &:hover,
                 &:focus {
                     color: @theme-primary;
@@ -158,8 +160,9 @@ h1, h2, h3, h4, h5, h6 {
 
 @media(min-width:768px) {
     .navbar-custom.affix {
-        background-color: @gray-darker;
+        background-color: white;
         padding: 10px 0;
+        border-bottom: 3px solid black;
         .navbar-brand {
             font-size: 1.5em;
         }
