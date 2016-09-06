@@ -34,6 +34,7 @@ gulp.task('minify-css', ['less'], function() {
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('css'))
+        .pipe(gulp.dest('dist/css'))
         .pipe(browserSync.reload({
             stream: true
         }))
@@ -46,6 +47,7 @@ gulp.task('minify-js', function() {
         .pipe(header(banner, { pkg: pkg }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('js'))
+        .pipe(gulp.dest('dist/js'))
         .pipe(browserSync.reload({
             stream: true
         }))
@@ -90,11 +92,7 @@ gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js'], function() 
     gulp.watch('js/**/*.js', browserSync.reload);
 });
 
-
-gulp.task('default', ['clean'], function () {
-    gulp.start('build');
-});
-
-gulp.task('build', function() {
-    
+gulp.task('build', ['less', 'minify-css', 'minify-js'], function() {
+    return gulp.src('index.html')
+        .pipe(gulp.dest('dist'));
 });
