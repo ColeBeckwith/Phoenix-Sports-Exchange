@@ -82,7 +82,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-custom {
     background-color: white;
-    //border-color: transparent;
     border-bottom: 3px solid black;
 
     .navbar-brand {
@@ -112,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
     .nav {
         li {
             a {
-                .heading-font;
+                .script-font;
                 font-weight: 400;
                 letter-spacing: 1px;
                 color: black;
@@ -226,6 +225,7 @@ section {
     padding: 100px 0;
     h2.section-heading {
         font-size: 40px;
+        .script-font;
         margin-top: 0;
         margin-bottom: 15px;
     }
@@ -515,7 +515,7 @@ section {
     margin-bottom: 50px;
     img {
         margin: 0 auto;
-        border: 7px solid white;
+        border: 7px solid @gray-lighter;
     }
     h4 {
         margin-top: 25px;
@@ -524,14 +524,6 @@ section {
     }
     p {
         margin-top: 0;
-    }
-}
-
-// Clients Aside
-
-aside.clients {
-    img {
-        margin: 50px auto;
     }
 }
 

@@ -152,7 +152,7 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .navbar-brand {
   color: #D12325;
-  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+  font-family: 'Playfair Display SC', serif;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
@@ -176,8 +176,7 @@ fieldset[disabled] .btn-xl.active {
   background-color: #D12325;
 }
 .navbar-custom .nav li a {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
+  font-family: 'Playfair Display SC', serif;
   font-weight: 400;
   letter-spacing: 1px;
   color: black;
@@ -283,6 +282,7 @@ section {
 }
 section h2.section-heading {
   font-size: 40px;
+  font-family: 'Playfair Display SC', serif;
   margin-top: 0;
   margin-bottom: 15px;
 }
@@ -541,7 +541,7 @@ section h3.section-subheading {
 }
 .team-member img {
   margin: 0 auto;
-  border: 7px solid white;
+  border: 7px solid #eeeeee;
 }
 .team-member h4 {
   margin-top: 25px;
@@ -550,9 +550,6 @@ section h3.section-subheading {
 }
 .team-member p {
   margin-top: 0;
-}
-aside.clients img {
-  margin: 50px auto;
 }
 section#contact {
   background-color: #222222;
