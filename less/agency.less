@@ -78,8 +78,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px 40px;
 }
 
-// Custom Navigation Bar
-
 .navbar-custom {
     background-color: white;
     border-bottom: 3px solid black;
@@ -137,7 +135,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media(min-width:768px) {
     .navbar-custom {
-        background-color: transparent;
+        opacity: .8;
         padding: 25px 0;
         -webkit-transition: padding 0.3s;
         -moz-transition: padding 0.3s;
@@ -160,6 +158,7 @@ h1, h2, h3, h4, h5, h6 {
 @media(min-width:768px) {
     .navbar-custom.affix {
         background-color: white;
+        opacity: 1;
         padding: 10px 0;
         border-bottom: 3px solid black;
         .navbar-brand {
